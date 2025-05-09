@@ -1,52 +1,109 @@
-<!DOCTYPE html>
+hora/
+│
+├── index.html          # Parte 1: Estrutura da página
+├── style.css           # Parte 2: Estética minimalista
+├── script.js           # Parte 3: Comportamento (base)
+├── README.md           # Parte 4: Descrição do projeto
+│
+├── assets/             # (Opcional) Imagens futuras
+│   └── imagens/
+│
+└── fonts/              # (Opcional) Fontes personalizadas
+>index.html<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>hóura</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Georgia', serif;
-      background-color: #f5f5f5;
-      color: #1a1a1a;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      text-align: center;
-      flex-direction: column;
-    }
-
-    h1 {
-      font-size: 3em;
-      margin-bottom: 0.3em;
-      letter-spacing: 1px;
-    }
-
-    p {
-      max-width: 600px;
-      line-height: 1.6;
-      font-size: 1.2em;
-      margin: 0 20px;
-    }
-
-    .signature {
-      margin-top: 3em;
-      font-size: 0.9em;
-      color: #888;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>hóura</h1>
-  <p>
-    Uma personagem silenciosa, autêntica e precisa. Minimalismo não é falta — é foco.<br>
-    hóura existe para lembrar o essencial: um propósito firme, um olhar calmo, uma escolha por dia.
-  </p>
-  <div class="signature">
-    Criado por Begalbeni — 2025
-  </div>
+  <header>
+    <h1>hóura</h1>
+  </header>
+
+  <main>
+    <section class="mensagem-central">
+      <p>Silêncio. Propósito. Essência.</p>
+    </section>
+
+    <section class="sobre">
+      <p>Uma presença digital que traduz raízes, escolhas e o valor do tempo.</p>
+    </section>
+
+    <section class="manifesto">
+      <p>
+        Menos é direção.<br />
+        O silêncio é presença.<br />
+        Ser é mais do que parecer.
+      </p>
+    </section>
+
+    <footer>
+      <p>por emilly galbani</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
+/* style.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f9f9f6;
+  color: #1a1a1a;
+  font-family: 'Georgia', serif;
+  line-height: 1.6;
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-transform: lowercase;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #222;
+}
+
+.mensagem-central p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #444;
+}
+
+.sobre, .manifesto {
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 1rem;
+  color: #555;
+}
+
+.manifesto p {
+  line-height: 2;
+  font-style: italic;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #888;
+  margin-top: 60px;
+}
+>script.js
+// script.js
+
+// Estrutura base para scripts futuros
+document.addEventListener("DOMContentLoaded", () => {
+  console.log("hóura carregada.");
+});
